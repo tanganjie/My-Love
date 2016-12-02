@@ -94,9 +94,9 @@ function typewriter(i, length) {
                 } else {
 
                 }
-            }, 1000);
+            }, 2000);
         }
-    }, 75);
+    }, 5);
 }
 
 function getDaysInMonth(month) {
