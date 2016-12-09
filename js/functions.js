@@ -88,15 +88,17 @@ function typewriter(i, length) {
         if (progress >= str.length) {
             clearInterval(timer);
             setTimeout(function () {
-                $ele.hide();
                 if (i < length -1) {
+                    $ele.hide();
                     typewriter(i + 1, length);
                 } else {
-
+                    setTimeout(function () {
+                        $('#heart_live').fadeIn("slow");
+                    }, 1000);
                 }
-            }, 2000);
+            }, 1500);
         }
-    }, 5);
+    }, 50);
 }
 
 function getDaysInMonth(month) {
